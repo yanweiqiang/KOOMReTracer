@@ -1,0 +1,305 @@
+{
+  "analysisDone": true,
+  "classInfos": [
+    {
+      "className": "android.app.Activity",
+      "instanceCount": 3,
+      "leakInstanceCount": 1
+    },
+    {
+      "className": "android.app.Fragment",
+      "instanceCount": 3,
+      "leakInstanceCount": 1
+    },
+    {
+      "className": "android.graphics.Bitmap",
+      "instanceCount": 4,
+      "leakInstanceCount": 1
+    },
+    {
+      "className": "libcore.util.NativeAllocationRegistry",
+      "instanceCount": 1215,
+      "leakInstanceCount": 0
+    },
+    {
+      "className": "android.view.Window",
+      "instanceCount": 3,
+      "leakInstanceCount": 0
+    }
+  ],
+  "gcPaths": [
+    {
+      "gcRoot": "System class",
+      "instanceCount": 1,
+      "leakReason": "primitive array size over threshold:1000000,976KB",
+      "path": [
+        {
+          "declaredClass": "",
+          "reference": "java.lang.Object[]",
+          "referenceType": "ARRAY_ENTRY"
+        },
+        {
+          "declaredClass": "java.lang.DexCache",
+          "reference": "java.lang.DexCache.runtimeInternalObjects",
+          "referenceType": "INSTANCE_FIELD"
+        },
+        {
+          "declaredClass": "",
+          "reference": "java.lang.Object[]",
+          "referenceType": "ARRAY_ENTRY"
+        },
+        {
+          "declaredClass": "com.tencent.matrix.trace.core.AppMethodBeat",
+          "reference": "com.tencent.matrix.trace.core.AppMethodBeat.sBuffer",
+          "referenceType": "STATIC_FIELD"
+        },
+        {
+          "reference": "long[]",
+          "referenceType": "array"
+        }
+      ],
+      "signature": "dc5fa4cfe9ccde753f19b45e5699fc2e95ead"
+    },
+    {
+      "gcRoot": "System class",
+      "instanceCount": 1,
+      "leakReason": "Activity Leak",
+      "path": [
+        {
+          "declaredClass": "",
+          "reference": "java.lang.Object[]",
+          "referenceType": "ARRAY_ENTRY"
+        },
+        {
+          "declaredClass": "java.lang.DexCache",
+          "reference": "java.lang.DexCache.runtimeInternalObjects",
+          "referenceType": "INSTANCE_FIELD"
+        },
+        {
+          "declaredClass": "",
+          "reference": "java.lang.Object[]",
+          "referenceType": "ARRAY_ENTRY"
+        },
+        {
+          "declaredClass": "com.hellobike.apm.leak.ActivityLeakMaker$LeakedActivity",
+          "reference": "com.hellobike.apm.leak.ActivityLeakMaker$LeakedActivity.k",
+          "referenceType": "STATIC_FIELD"
+        },
+        {
+          "declaredClass": "java.util.ArrayList",
+          "reference": "java.util.ArrayList.elementData",
+          "referenceType": "INSTANCE_FIELD"
+        },
+        {
+          "declaredClass": "",
+          "reference": "java.lang.Object[]",
+          "referenceType": "ARRAY_ENTRY"
+        },
+        {
+          "reference": "com.hellobike.apm.leak.ActivityLeakMaker$LeakedActivity",
+          "referenceType": "instance"
+        }
+      ],
+      "signature": "5fe380c8ca79b7ff3d89b24fe5e9598c2ce32ea8"
+    },
+    {
+      "gcRoot": "System class",
+      "instanceCount": 1,
+      "leakReason": "Bitmap Size",
+      "path": [
+        {
+          "declaredClass": "",
+          "reference": "java.lang.Object[]",
+          "referenceType": "ARRAY_ENTRY"
+        },
+        {
+          "declaredClass": "java.lang.DexCache",
+          "reference": "java.lang.DexCache.runtimeInternalObjects",
+          "referenceType": "INSTANCE_FIELD"
+        },
+        {
+          "declaredClass": "",
+          "reference": "java.lang.Object[]",
+          "referenceType": "ARRAY_ENTRY"
+        },
+        {
+          "declaredClass": "com.hellobike.apm.leak.d",
+          "reference": "com.hellobike.apm.leak.d.b",
+          "referenceType": "STATIC_FIELD"
+        },
+        {
+          "declaredClass": "java.util.ArrayList",
+          "reference": "java.util.ArrayList.elementData",
+          "referenceType": "INSTANCE_FIELD"
+        },
+        {
+          "declaredClass": "",
+          "reference": "java.lang.Object[]",
+          "referenceType": "ARRAY_ENTRY"
+        },
+        {
+          "declaredClass": "com.hellobike.apm.leak.d",
+          "reference": "com.hellobike.apm.leak.a.a",
+          "referenceType": "INSTANCE_FIELD"
+        },
+        {
+          "declaredClass": "java.util.ArrayList",
+          "reference": "java.util.ArrayList.elementData",
+          "referenceType": "INSTANCE_FIELD"
+        },
+        {
+          "declaredClass": "",
+          "reference": "java.lang.Object[]",
+          "referenceType": "ARRAY_ENTRY"
+        },
+        {
+          "reference": "android.graphics.Bitmap",
+          "referenceType": "instance"
+        }
+      ],
+      "signature": "22f11bc2bbffd5f1f61a8c1d8cae35d321a3633"
+    },
+    {
+      "gcRoot": "System class",
+      "instanceCount": 1,
+      "leakReason": "primitive array size over threshold:262145,256KB",
+      "path": [
+        {
+          "declaredClass": "",
+          "reference": "java.lang.Object[]",
+          "referenceType": "ARRAY_ENTRY"
+        },
+        {
+          "declaredClass": "java.lang.DexCache",
+          "reference": "java.lang.DexCache.runtimeInternalObjects",
+          "referenceType": "INSTANCE_FIELD"
+        },
+        {
+          "declaredClass": "",
+          "reference": "java.lang.Object[]",
+          "referenceType": "ARRAY_ENTRY"
+        },
+        {
+          "declaredClass": "com.hellobike.apm.leak.d",
+          "reference": "com.hellobike.apm.leak.d.b",
+          "referenceType": "STATIC_FIELD"
+        },
+        {
+          "declaredClass": "java.util.ArrayList",
+          "reference": "java.util.ArrayList.elementData",
+          "referenceType": "INSTANCE_FIELD"
+        },
+        {
+          "declaredClass": "",
+          "reference": "java.lang.Object[]",
+          "referenceType": "ARRAY_ENTRY"
+        },
+        {
+          "declaredClass": "com.hellobike.apm.leak.d",
+          "reference": "com.hellobike.apm.leak.b.a",
+          "referenceType": "INSTANCE_FIELD"
+        },
+        {
+          "declaredClass": "java.util.ArrayList",
+          "reference": "java.util.ArrayList.elementData",
+          "referenceType": "INSTANCE_FIELD"
+        },
+        {
+          "declaredClass": "",
+          "reference": "java.lang.Object[]",
+          "referenceType": "ARRAY_ENTRY"
+        },
+        {
+          "declaredClass": "com.hellobike.apm.leak.b$a",
+          "reference": "com.hellobike.apm.leak.b$a.a",
+          "referenceType": "INSTANCE_FIELD"
+        },
+        {
+          "reference": "byte[]",
+          "referenceType": "array"
+        }
+      ],
+      "signature": "64e21b9087f4d0ee22836ce0688871d4dc7de14"
+    },
+    {
+      "gcRoot": "System class",
+      "instanceCount": 1,
+      "leakReason": "primitive array size over threshold:262145,256KB",
+      "path": [
+        {
+          "declaredClass": "",
+          "reference": "java.lang.Object[]",
+          "referenceType": "ARRAY_ENTRY"
+        },
+        {
+          "declaredClass": "java.lang.DexCache",
+          "reference": "java.lang.DexCache.runtimeInternalObjects",
+          "referenceType": "INSTANCE_FIELD"
+        },
+        {
+          "declaredClass": "",
+          "reference": "java.lang.Object[]",
+          "referenceType": "ARRAY_ENTRY"
+        },
+        {
+          "declaredClass": "com.hellobike.apm.leak.d",
+          "reference": "com.hellobike.apm.leak.d.b",
+          "referenceType": "STATIC_FIELD"
+        },
+        {
+          "declaredClass": "java.util.ArrayList",
+          "reference": "java.util.ArrayList.elementData",
+          "referenceType": "INSTANCE_FIELD"
+        },
+        {
+          "declaredClass": "",
+          "reference": "java.lang.Object[]",
+          "referenceType": "ARRAY_ENTRY"
+        },
+        {
+          "declaredClass": "com.hellobike.apm.leak.d",
+          "reference": "com.hellobike.apm.leak.e.a",
+          "referenceType": "INSTANCE_FIELD"
+        },
+        {
+          "declaredClass": "java.util.ArrayList",
+          "reference": "java.util.ArrayList.elementData",
+          "referenceType": "INSTANCE_FIELD"
+        },
+        {
+          "declaredClass": "",
+          "reference": "java.lang.Object[]",
+          "referenceType": "ARRAY_ENTRY"
+        },
+        {
+          "declaredClass": "java.lang.String",
+          "reference": "java.lang.String.value",
+          "referenceType": "INSTANCE_FIELD"
+        },
+        {
+          "reference": "char[]",
+          "referenceType": "array"
+        }
+      ],
+      "signature": "e52595da83bbf62bbc2a7b367eea1891c4d3fb"
+    }
+  ],
+  "runningInfo": {
+    "analysisReason": "RIGHT_NOW",
+    "appVersion": "0.7.6",
+    "buildModel": "COL-AL10",
+    "currentPage": "com.hellobike.apm.leak.ActivityLeakMaker$LeakedActivity",
+    "dumpReason": "MANUAL_TRIGGER",
+    "jvmMax": 384,
+    "jvmUsed": 13,
+    "koomVersion": 1,
+    "manufacture": "HUAWEI",
+    "nowTime": "2021-01-11_14-57-47",
+    "pss": 26,
+    "rss": 90,
+    "sdkInt": 29,
+    "threadCount": 42,
+    "usageSeconds": 5,
+    "vss": 6055
+  }
+}
